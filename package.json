@@ -1,0 +1,15 @@
+{
+  "name": "movie_manager",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "daemon": "^1.1.0",
+    "express": "2.5.8"
+  },
+  "devDependencies": {
+    "mysql": "^2.12.0",
+    "node-idocs": "latest",
+    "express-api-docs": "latest",
+    "mocha": "latest"
+  }
+}
