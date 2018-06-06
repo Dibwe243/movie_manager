@@ -4,12 +4,14 @@
   "private": true,
   "dependencies": {
     "daemon": "^1.1.0",
+    "ejs-locals": "^1.0.2",
     "express": "2.5.8"
   },
   "devDependencies": {
     "mysql": "^2.12.0",
     "node-idocs": "latest",
     "express-api-docs": "latest",
-    "mocha": "latest"
+    "mocha": "latest",
+    "ejs": "^1.0.0"
   }
 }

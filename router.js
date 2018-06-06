@@ -8,4 +8,13 @@ exports.setup = function( app ) {
 
     app.get('/', routes.index);
 
+    app.get('/recent', routes.recent);
+    app.get('/topmovies', routes.topmovies);
+    app.get('/favorite', routes.favorite);
+    app.get('/comingsoon', routes.comingsoon);
+    app.get('/search', routes.search);
+
+
+
+
 };
