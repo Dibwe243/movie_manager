@@ -5,7 +5,10 @@
 var express = require('express');
 var router  = require('./router');
 var config  = require('./config').values;
+var path = require('path');
+//var ejs_local = require('ejs-locals');
 
+//app.engine('ejs', engine);
 var app     = express.createServer();
 
 // Configuration
@@ -14,8 +17,14 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
+
   app.use(express.static(__dirname + '/public'));
+  //app.engine('ejs', ejs_local );
+  app.set('view engine', 'ejs');
 });
+
+//app.set('views',[path.join(__dirname,'views'),path.join(__dirname,'views/pages'),path.join(__dirname,'views/partials')]);
+app.set('views',path.join(__dirname,'/views'));
 
 app.configure('development', function(){
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
@@ -45,6 +54,7 @@ else {
 }
 
 router.setup(app);
+
 
 console.log("Express server listening on port %d in %s mode",
 	    config.port, app.settings.env);

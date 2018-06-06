@@ -7,5 +7,8 @@ var routes = require('./routes/index');
 exports.setup = function( app ) {
 
     app.get('/', routes.index);
+    app.get('/test', function(req, res) {
+    res.render('./pages/test', {body: 'The test page!' });
+    });
 
 };
