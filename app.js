@@ -14,7 +14,11 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
-  app.use(express.static(__dirname + '/public'));
+//  app.use(express.static(__dirname + '/public'));
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/public'));
+//app.use('/public', express.static(process.cwd() + '/public'));
+
 });
 
 app.configure('development', function(){
