@@ -17,10 +17,18 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
+<<<<<<< HEAD
 
   app.use(express.static(__dirname + '/public'));
   //app.engine('ejs', ejs_local );
   app.set('view engine', 'ejs');
+=======
+//  app.use(express.static(__dirname + '/public'));
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/public'));
+//app.use('/public', express.static(process.cwd() + '/public'));
+
+>>>>>>> 84acb91d799895600261c9369f53221adbcda09f
 });
 
 //app.set('views',[path.join(__dirname,'views'),path.join(__dirname,'views/pages'),path.join(__dirname,'views/partials')]);

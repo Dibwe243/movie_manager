@@ -11,4 +11,13 @@ exports.setup = function( app ) {
     res.render('./pages/test', {body: 'The test page!' });
     });
 
+    app.get('/recent', routes.recent);
+    app.get('/topmovies', routes.topmovies);
+    app.get('/favorite', routes.favorite);
+    app.get('/comingsoon', routes.comingsoon);
+    app.get('/search', routes.search);
+
+
+
+
 };
