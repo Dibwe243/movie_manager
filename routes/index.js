@@ -25,6 +25,7 @@ exports.comingsoon = function( request, response ) {
 exports.search = function( request, response ) {
 
   response.render("pages/search");
+  
 
 };
 
