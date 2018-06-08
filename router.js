@@ -7,5 +7,19 @@ var routes = require('./routes/index');
 exports.setup = function( app ) {
 
     app.get('/', routes.index);
+    app.get('/test', function(req, res) {
+    res.render('./pages/test', {body: 'The test page!' });
+    });
+
+    app.get('/recent', routes.recent);
+    app.get('/topmovies', routes.topmovies);
+    app.get('/favorite', routes.favorite);
+    app.get('/comingsoon', routes.comingsoon);
+    app.get('/search', routes.search);
+    app.get('/search_result', routes.search_result);
+
+
+
+
 
 };
