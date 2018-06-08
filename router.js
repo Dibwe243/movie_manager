@@ -16,6 +16,8 @@ exports.setup = function( app ) {
     app.get('/favorite', routes.favorite);
     app.get('/comingsoon', routes.comingsoon);
     app.get('/search', routes.search);
+    app.get('/search_result', routes.search_result);
+
 
 
 

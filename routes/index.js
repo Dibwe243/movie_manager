@@ -23,5 +23,11 @@ exports.comingsoon = function( request, response ) {
   response.render("pages/comingsoon");
 };
 exports.search = function( request, response ) {
+
   response.render("pages/search");
+
+};
+
+exports.search_result = function( request, response ) {
+  response.render("pages/search_result");
 };

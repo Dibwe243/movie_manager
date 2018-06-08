@@ -5,19 +5,13 @@
   "dependencies": {
     "daemon": "^1.1.0",
     "ejs-locals": "^1.0.2",
-<<<<<<< HEAD
-    "express": "2.5.8",
-    "path": "^0.12.7"
-=======
     "express": "2.5.8"
->>>>>>> 84acb91d799895600261c9369f53221adbcda09f
   },
   "devDependencies": {
     "mysql": "^2.12.0",
-    "ejs": "~0.7.1",
+    "ejs": "^1.0.0",
     "node-idocs": "latest",
     "express-api-docs": "latest",
-    "mocha": "latest",
-    "ejs": "^1.0.0"
+    "mocha": "latest"
   }
 }
