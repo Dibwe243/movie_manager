@@ -9,6 +9,17 @@
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script  type="text/javascript" src="js/typeahead.min.js"></script>
+<script type="text/javascript">
+// $(document).ready(function(){
+//     $('input.typeahead').typeahead({
+//         name: 'countries',
+//         remote: 'http://localhost:3000/search?key=%QUERY',
+//         limit: 10
+//
+//     });
+// });
+</script>
 <style>
   /* Remove the navbar's default rounded borders and increase the bottom margin */
   .navbar {
@@ -111,7 +122,7 @@ input[type=text]:focus {
   <a href="#">Top Movies</a>
   <a href="#">Favorite</a>
   <a href="#">Coming Soon</a>
-  <a href="#">Search</a>
+  <a href="/search_index">Search</a>
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;<hr></span>
 

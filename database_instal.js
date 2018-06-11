@@ -4,7 +4,7 @@ var mysql = require('mysql');
 var con = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password:''
+  password:'123456'
 });
 
 con.connect(function(err){
@@ -28,7 +28,7 @@ con.query('CREATE TABLE GENRE'+
            '(GENRE_ID INT AUTO_INCREMENT NOT NULL PRIMARY KEY,'+
            'SIGN VARCHAR(255) NOT NULL,'+
            'GENRE_DESCRIPTION VARCHAR(255))',
-           
+
             function(err){
                             if(err){
                               console.log('could not create table "GENRE" :'+ err);

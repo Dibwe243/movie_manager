@@ -1,6 +1,6 @@
 <%- layout('layout') -%>
-<div class="search-container">
-  <form id="searchForm">
-  <input type="text" name="search" placeholder="Search..">
-  </form>
-  </div>
+<ul>
+    <% movies.forEach(function(movie) { %>
+        <li><%= movie.title %> - <%= movie.genre %></li>
+    <% }); %>
+</ul>
